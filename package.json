@@ -1,0 +1,20 @@
+{
+  "name": "js_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix admin && npm run build --prefix admin",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-surik:Surik3415/js_stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
