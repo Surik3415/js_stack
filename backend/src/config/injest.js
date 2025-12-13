@@ -34,8 +34,6 @@ const deleteUserFromDB = inngest.createFunction(
     await User.deleteOne({
       clerkId: id
     })
-
-    await User.create(newUser)
   }
 )
 
