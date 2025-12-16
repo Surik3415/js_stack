@@ -4,35 +4,35 @@ const addressSchema = new mongoose.Schema(
   {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     fullName: {
       type: String,
-      required: true,
+      required: true
     },
     streetAddress: {
       type: String,
-      required: true,
+      required: true
     },
     city: {
       type: String,
-      required: true,
+      required: true
     },
     state: {
       type: String,
-      required: true,
+      required: true
     },
     zipCode: {
       type: String,
-      required: true,
+      required: true
     },
     phoneNumber: {
       type: String,
-      required: true,
+      required: true
     },
     isDefault: {
       type: Boolean,
-      default: false,
+      default: false
     }
   }
 )
@@ -46,16 +46,16 @@ const userSchema = new mongoose.Schema(
     },
     username: {
       type: String,
-      required: true,
+      required: true
     },
     avatarImageUrl: {
       type: String,
-      default:"",
+      default:""
     },
     clerkId: {
       type: String,
       unique: true,
-      required: true,
+      required: true
     },
     addresses: [addressSchema],
     wishlist: [

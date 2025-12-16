@@ -4,11 +4,11 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      required: true,
+      required: true
     },
     price: {
       type: Number,
@@ -23,12 +23,12 @@ const productSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      required: true,
+      required: true
     },
     images: [
       {
         type: String,
-        required: true,
+        required: true
       }
     ],
     averageRating: {
